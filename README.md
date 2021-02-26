@@ -147,4 +147,5 @@ we pass the UIViewController as the parameter, so the constraints will be added 
 The assumptions made here are:
 1. The subView is centered vertically.
 2. The subView is centered horizontally.
+*/
 ```
