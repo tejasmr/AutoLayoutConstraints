@@ -137,15 +137,21 @@ let label = UILabel()
 // Inside UIViewController, in some function like override func viewDidLoad()
 let labelALC = AutoLayoutConstraints(subView: label, width: screenWidth / 2, height: screenHeight / 4")
 labelALC.setConstraints(self)
-/*
-Let us unpack the first statement.
-subView: label -> sets the subView property of the AutoLayoutConstraints object as the UILabel named label
-width: screenWidth / 2 -> sets the width property of the AutoLayoutConstraints object as half of the screenWidth
-height: screenHeight / 4 -> sets the height property of the AutoLayoutConstraints object as quater of the screenHeight
-In the second statement.
-we pass the UIViewController as the parameter, so the constraints will be added to the view property of the viewController.
-The assumptions made here are:
-1. The subView is centered vertically.
-2. The subView is centered horizontally.
-*/
 ```
+Let us unpack the first statement.
+
+subView: label -> sets the subView property of the AutoLayoutConstraints object as the UILabel named label
+
+width: screenWidth / 2 -> sets the width property of the AutoLayoutConstraints object as half of the screenWidth
+
+height: screenHeight / 4 -> sets the height property of the AutoLayoutConstraints object as quater of the screenHeight
+
+In the second statement.
+
+We pass the UIViewController as the parameter, so the constraints will be added to the view property of the viewController.
+
+The assumptions made here are:
+
+1. The subView is centered vertically.
+
+2. The subView is centered horizontally.
